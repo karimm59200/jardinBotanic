@@ -1,5 +1,6 @@
 package com.example.apirest.dto;
 
+
 import com.example.infrastructurespringdata.entity.CommentEntity;
 import com.example.infrastructurespringdata.entity.UserAppEntity;
 import lombok.AllArgsConstructor;

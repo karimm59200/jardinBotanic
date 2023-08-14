@@ -35,4 +35,9 @@ public class PlantServiceImpl implements PlantService {
     public List<Plant> getAllPlants() {
         return null;
     }
+
+    @Override
+    public Plant deletePlantById(int id) {
+        return null;
+    }
 }

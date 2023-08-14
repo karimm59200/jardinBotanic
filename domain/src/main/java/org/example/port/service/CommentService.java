@@ -3,11 +3,10 @@ package org.example.port.service;
 import org.example.entity.Comment;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 public interface CommentService {
-    Comment createComment( String title, LocalDateTime date, String commentType);
+    Comment createComment(String title, LocalDateTime date, String commentType, String type);
 
     List<Comment> getAllComments();
 
@@ -17,4 +16,5 @@ public interface CommentService {
 
     void deleteComment(int id);
 
+    List<Comment> getCommentByIdPlant(int idPlant);
 }

@@ -15,4 +15,5 @@ public interface CommentRepository {
     void delete(Comment comment);
 
 
+    List<Comment> findByIdPlant(int idPlant);
 }

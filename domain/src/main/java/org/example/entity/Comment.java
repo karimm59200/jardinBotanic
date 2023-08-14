@@ -11,22 +11,27 @@ public class Comment {
 
     private LocalDateTime date;
 
-    // commentaires, astuces, questions, anecdotes
+    private String commentContent ;
+
+
      private String commentType;
 
     public Comment() {
     }
 
-    public Comment(int id, String title, LocalDateTime date, String commentType) {
-        this(title, date, commentType);
+    public Comment(int id, String title, LocalDateTime date, String commentContent, String commentType) {
+        this(title, date, commentContent, commentType);
         this.id = id;
     }
 
-    public Comment(String title, LocalDateTime date, String commentType) {
+    public Comment(String title, LocalDateTime date, String commentContent, String commentType) {
         this.title = title;
         this.date = date;
         this.commentType = commentType;
+        this.commentContent = commentContent;
     }
+
+
 
     public int getId() {
         return id;
@@ -59,4 +64,14 @@ public class Comment {
     public void setCommentType(String commentType) {
         this.commentType = commentType;
     }
+
+    public String getCommentContent() {
+        return commentContent;
+    }
+
+    public void setCommentContent(String commentContent) {
+        this.commentContent = commentContent;
+    }
+
+
 }

@@ -56,4 +56,9 @@ public class CommentRepositoryImpl implements CommentRepository {
     public void delete(Comment comment) {
         commentEntityRepository.delete(modelMapper.map(comment, CommentEntity.class));
     }
+
+    @Override
+    public List<Comment> findByIdPlant(int idPlant) {
+        return null;
+    }
 }
