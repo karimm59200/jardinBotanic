@@ -1,9 +1,11 @@
-package org.application.config;
+package com.example.application.config;
 
-import com.example.infrastructurespringdata.repository.impl.ReportRepositoryImpl;
+import com.example.infrastructurespringdata.repository.impl.CommentRepositoryImpl;
+import com.example.infrastructurespringdata.repository.impl.PlantRepositoryImpl;
 import com.example.infrastructurespringdata.repository.impl.UserRepositoryImpl;
-import org.example.service.ReportServiceImpl;
-import org.example.service.UserServiceImpl;
+import org.example.serviceImpl.CommentServiceImpl;
+import org.example.serviceImpl.PlantServiceImpl;
+import org.example.serviceImpl.UserServiceImpl;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
